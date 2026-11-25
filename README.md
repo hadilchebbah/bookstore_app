@@ -1,16 +1,81 @@
-# final_pr_masterclass
+# 📚 Bookstore App
 
-A new Flutter project.
+A bookstore application designed to help users discover books, explore categories and vendors, manage their wishlist, and maintain their personal profile.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+### Authentication
+- Splash screen with session checking
+- Sign in with email and password
+- Sign up with name, email, password, and password confirmation
+- Forgot password functionality
+- Persistent authentication using Supabase
+- Automatic navigation based on authentication state
 
-A few resources to get you started if this is your first Flutter project:
+### Home
+- Featured books displayed horizontally
+- Browse featured books with a "See All" option
+- Featured vendors section
+- Search functionality
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Book Discovery
+- Browse all books in a grid layout
+- View detailed book information
+- Explore book categories
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Wishlist
+- Add books to wishlist using the like button
+- View saved books
+- Remove books from wishlist
+
+### Vendors
+- Explore featured vendors
+- Browse the complete vendors list
+
+### Profile
+- Display user information
+- View name, email, and avatar
+- Logout and clear the authentication session
+
+## Navigation
+
+The application includes a bottom navigation bar with four main sections:
+
+- Home
+- Category
+- Wishlist
+- Profile
+
+## Authentication Flow
+
+```text
+Splash Screen
+    ↓
+Check Supabase Session
+    ↓
+ ┌──────────────┐
+ │ Logged In?   │
+ └──────────────┘
+   ↙        ↘
+ Yes          No
+  ↓            ↓
+ Home       Sign In
+               ↓
+       ┌───────┴────────┐
+       ↓                ↓
+    Sign Up       Forgot Password
+```
+
+## Tech Stack
+
+- Flutter *(if used for implementation)*
+- Supabase Authentication
+- Supabase backend services
+
+## Project Status
+
+🚧 Under development
+
+## Contributors
+
+- Chebbah Hadil
