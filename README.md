@@ -72,9 +72,7 @@ Check Supabase Session
 - Supabase Authentication
 - Supabase backend services
 
-## Project Status
 
-🚧 Under development
 
 ## Contributors
 
